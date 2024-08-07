@@ -23,9 +23,7 @@ function App() {
         </button>
         <p>Hello this page is the Franes Dev</p>
       </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className='read-the-docs'>Proximamente un poco de todo!!!</p>
     </>
   );
 }
