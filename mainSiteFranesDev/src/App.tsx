@@ -26,7 +26,7 @@ const translations: Translations = {
     contactText: 'Get in touch with us!',
   },
   es: {
-    heroTitle: 'Soy Frankln Paute Machuca',
+    heroTitle: 'Soy Franklin Paute Machuca',
     heroSubtitle: 'Hola',
     heroText:
       'Desarrollador Full Stack | .NET | MAUI | React | Ecuatoriano, apasionado por lo que hago y compartiendo el viaje de la programación y el desarrollo de software.',
