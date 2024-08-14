@@ -1,42 +1,139 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  overflow-x: hidden; /* Evita que aparezcan barras de desplazamiento horizontales */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: right;
+  z-index: 1000; /* Asegúrate de que esté encima del contenido */
+  font-size: x-small;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav a.active {
+  border-bottom: 2px solid #95c11f;
+  color: #95c11f; /* Subraya el enlace activo */
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  color: white;
   text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* Archivo App.css */
+/* Archivo App.css */
+section h1 {
+  font-size: 6rem; /* Ajusta según sea necesario */
+  margin: 0; /* Asegúrate de que no haya márgenes que afecten el tamaño visual */
+  padding: 0; /* Asegúrate de que no haya rellenos que afecten el tamaño visual */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+section h2 {
+  font-size: 3rem; /* Ajusta según sea necesario */
+  margin: 0; /* Asegúrate de que no haya márgenes que afecten el tamaño visual */
+  padding: 0; /* Asegúrate de que no haya rellenos que afecten el tamaño visual */
+  color: #95c11f;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./src/assets/backgroundcode.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
 }
 
-.card {
-  padding: 2em;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para mayor legibilidad */
+  border-radius: 10px; /* Opcional: para dar un borde redondeado */
+}
+/* Agrega un contenedor para el texto en la sección "about" */
+.about-content {
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Añade algo de espacio alrededor del contenido */
+  text-align: justify; /* Justifica el texto dentro del contenedor */
 }
 
-.read-the-docs {
-  color: #888;
+/* Estilos generales para la sección "about" */
+.about {
+  background-color: white; /* Cambia el color de fondo según sea necesario */
+  color: #555;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  min-height: 100vh; /* Asegúrate de que la sección ocupe al menos la altura de la ventana */
+}
+
+.about-content h2 {
+  color: #555;
+  font-size: 2.5rem; /* Ajusta el tamaño de la fuente del título */
+}
+
+.about-content p {
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente del párrafo */
+  line-height: 1.6; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+}
+
+.contact {
+  background-color: #e74c3c; /* Rojo */
 }
