@@ -42,15 +42,8 @@ const translations: Translations = {
 function App() {
   const [language, setLanguage] = useState<'en' | 'es'>('en');
 
-  const {
-    heroTitle,
-    heroSubtitle,
-    heroText,
-    aboutTitle,
-    aboutText,
-    contactTitle,
-    contactText,
-  } = translations[language];
+  const { heroTitle, heroSubtitle, heroText, aboutTitle, aboutText } =
+    translations[language];
 
   return (
     <>
