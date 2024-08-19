@@ -11,6 +11,8 @@ import {
 import emailjs from 'emailjs-com';
 import image1 from '../public/logocircular.png';
 import image2 from '../public/logonombre.png';
+import YouTubePlayer from 'react-player/youtube';
+
 interface Translations {
   [key: string]: {
     heroTitle: string;
@@ -124,6 +126,14 @@ function App() {
             <div className='image-container'>
               <img src={image1} alt='Image 1' className='image-1' />
               <img src={image2} alt='Image 2' className='image-2' />
+            </div>
+
+            <div className='video-container'>
+              <YouTubePlayer
+                url='https://www.youtube.com/watch?v=7CD3aPlSdjM'
+                controls
+                loop
+              />
             </div>
           </div>
         </section>
