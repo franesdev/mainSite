@@ -33,7 +33,7 @@ const translations: Translations = {
       'Full Stack Developer | .NET | MAUI | React | 🇪🇨 Ecuadorian, passionate about what I do, and sharing the journey of programming and software development.',
     aboutTitle: 'About Me',
     aboutText:
-      'With over 9 years of experience as a full-stack engineer, I am passionate about solving complex problems and delivering high-quality solutions. My expertise spans both front-end and back-end development, enabling me to build robust websites, applications, and mobile platforms. I provide comprehensive services, including database management and the creation of user-centric websites. My technical skills include proficiency in programming languages such as C# and Java, and I have hands-on experience with technologies like React, Xamarin Forms, and .NET Core. Additionally, I am skilled in mobile development using .NET MAUI. I am also open to relocating to new cities to further my personal and professional growth.',
+      'With over 10 years of experience as a full-stack engineer, I am passionate about solving complex problems and delivering high-quality solutions. My expertise spans both front-end and back-end development, enabling me to build robust websites, applications, and mobile platforms. I provide comprehensive services, including database management and the creation of user-centric websites. My technical skills include proficiency in programming languages such as C# and Java, and I have hands-on experience with technologies like React, Xamarin Forms, and .NET Core. Additionally, I am skilled in mobile development using .NET MAUI. I am also open to relocating to new cities to further my personal and professional growth.',
     contactTitle: 'Contact Us',
     contactText: 'Get in touch with us!',
   },
@@ -44,7 +44,7 @@ const translations: Translations = {
       'Desarrollador Full Stack | .NET | MAUI | React | 🇪🇨 Ecuatoriano, apasionado por lo que hago y compartiendo el viaje de la programación y el desarrollo de software.',
     aboutTitle: 'Sobre Mí',
     aboutText:
-      'Con más de 9 años de experiencia como ingeniero full-stack, me apasiona resolver problemas complejos y ofrecer soluciones de alta calidad. Mi experiencia abarca el desarrollo tanto de front-end como de back-end, lo que me permite construir sitios web, aplicaciones y plataformas móviles robustas. Ofrezco servicios integrales, incluyendo la gestión de bases de datos y la creación de sitios web centrados en el usuario. Mis habilidades técnicas incluyen la programación en lenguajes como C# y Java, y tengo experiencia práctica con tecnologías como React, Xamarin Forms y .NET Core. Además, tengo experiencia en el desarrollo móvil utilizando .NET MAUI. También estoy abierto a reubicarme en nuevas ciudades para potenciar mi crecimiento personal y profesional.',
+      'Con más de 10 años de experiencia como ingeniero full-stack, me apasiona resolver problemas complejos y ofrecer soluciones de alta calidad. Mi experiencia abarca el desarrollo tanto de front-end como de back-end, lo que me permite construir sitios web, aplicaciones y plataformas móviles robustas. Ofrezco servicios integrales, incluyendo la gestión de bases de datos y la creación de sitios web centrados en el usuario. Mis habilidades técnicas incluyen la programación en lenguajes como C# y Java, y tengo experiencia práctica con tecnologías como React, Xamarin Forms y .NET Core. Además, tengo experiencia en el desarrollo móvil utilizando .NET MAUI. También estoy abierto a reubicarme en nuevas ciudades para potenciar mi crecimiento personal y profesional.',
     contactTitle: 'Contáctanos',
     contactText: '¡Ponte en contacto conmigo si lo necesitas!',
   },
@@ -59,10 +59,10 @@ function App() {
     if (form.current) {
       emailjs
         .sendForm(
-          'YOUR_SERVICE_ID',
-          'YOUR_TEMPLATE_ID',
+          'service_2626zss',
+          'emailcontactportafolio',
           form.current,
-          'YOUR_USER_ID'
+          'u6wrgff2uwwCpj5hr'
         )
         .then(
           (result) => {

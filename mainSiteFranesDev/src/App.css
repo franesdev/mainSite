@@ -215,11 +215,13 @@ section h2 {
   text-decoration: underline;
 }
 .image-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
+  z-index: 2;
+
 }
 
 .image-1 {
