@@ -1,4 +1,7 @@
 import { useState, useRef } from 'react';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GenerateTest from './GenerateTest'; // Importa el nuevo componente
 import './App.css';
 import {
   FaFacebook,
@@ -50,7 +53,23 @@ const translations: Translations = {
   },
 };
 
+
 function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/generate-test" element={<GenerateTest />} />
+      </Routes>
+    </Router>
+  );
+}
+
+
+
+
+
+function Home() {
   const [language, setLanguage] = useState<'en' | 'es'>('en');
   const form = useRef(null);
 
@@ -123,10 +142,32 @@ function App() {
             <h2>{heroSubtitle}</h2>
             <h1>{heroTitle}</h1>
             <p>{heroText}</p>
+
+           
+
+
+
             <div className='image-container'>
               <img src={image1} alt='Image 1' className='image-1' />
               <img src={image2} alt='Image 2' className='image-2' />
             </div>
+
+            <button  style={{
+          backgroundColor: '#4CAF50', // Color de fondo verde
+          color: 'white', // Color del texto blanco
+          border: 'none', // Sin borde
+          padding: '10px 20px', // Espaciado interno
+          textAlign: 'center', // Alinear el texto
+          textDecoration: 'none', // Sin subrayado
+          display: 'inline-block', 
+          fontSize: '24px', // Tamaño de fuente
+          margin: '10px 2px', // Espaciado externo
+          cursor: 'pointer', // Cursor de puntero
+          borderRadius: '12px', // Bordes redondeados
+          transition: 'background-color 0.3s ease', // Transición suave al pasar el mouse
+        }} onClick={() => window.location.href = '/generate-test'}>
+      Generar Test
+    </button>
 
             <div className='video-container'>
               <YouTubePlayer
