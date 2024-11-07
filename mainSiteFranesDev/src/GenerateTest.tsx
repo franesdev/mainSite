@@ -38,7 +38,7 @@ const GenerateTest = () => {
   // Función para generar 4 tests a partir de las preguntas cargadas
   const generateTests = () => {
     const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
-    const numberOfTests = 4;
+    const numberOfTests = 6;
     const questionsPerTest = Math.ceil(shuffledQuestions.length / numberOfTests);
 
     const tests = Array.from({ length: numberOfTests }, (_, index) => {
