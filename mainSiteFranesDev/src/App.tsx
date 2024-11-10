@@ -142,17 +142,12 @@ function Home() {
             <h2>{heroSubtitle}</h2>
             <h1>{heroTitle}</h1>
             <p>{heroText}</p>
-
-           
-
-
-
             <div className='image-container'>
               <img src={image1} alt='Image 1' className='image-1' />
               <img src={image2} alt='Image 2' className='image-2' />
             </div>
 
-            <button  style={{
+            {/* <button  style={{
           backgroundColor: '#4CAF50', // Color de fondo verde
           color: 'white', // Color del texto blanco
           border: 'none', // Sin borde
@@ -167,11 +162,11 @@ function Home() {
           transition: 'background-color 0.3s ease', // Transición suave al pasar el mouse
         }} onClick={() => window.location.href = '/generate-test'}>
       Generar Test
-    </button>
+    </button> */}
 
             <div className='video-container'>
               <YouTubePlayer
-                url='https://www.youtube.com/watch?v=7CD3aPlSdjM'
+                url='https://www.youtube.com/watch?v=n12-Btx-ABA'
                 controls
                 loop
               />
