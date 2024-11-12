@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GenerateTest from './GenerateTest'; // Importa el nuevo componente
 import './App.css';
@@ -31,28 +30,27 @@ interface Translations {
 const translations: Translations = {
   en: {
     heroTitle: "I'm Franklin Paute Machuca",
-    heroSubtitle: 'HEY THERE!',
+    heroSubtitle: 'Imagine | Code | Create',
     heroText:
-      'Full Stack Developer | .NET | MAUI | React | 🇪🇨 Ecuadorian, passionate about what I do, and sharing the journey of programming and software development.',
-    aboutTitle: 'About Me',
+      'Full Stack Developer | .NET | MAUI | React | 🇪🇨 Ecuadorian, passionate about what I do. I love tackling technical challenges and building innovative solutions. Sharing the journey of programming and software development.',
+    aboutTitle: 'Who is behind the keyboard?',
     aboutText:
-      'With over 10 years of experience as a full-stack engineer, I am passionate about solving complex problems and delivering high-quality solutions. My expertise spans both front-end and back-end development, enabling me to build robust websites, applications, and mobile platforms. I provide comprehensive services, including database management and the creation of user-centric websites. My technical skills include proficiency in programming languages such as C# and Java, and I have hands-on experience with technologies like React, Xamarin Forms, and .NET Core. Additionally, I am skilled in mobile development using .NET MAUI. I am also open to relocating to new cities to further my personal and professional growth.',
-    contactTitle: 'Contact Us',
-    contactText: 'Get in touch with us!',
+      "With over 10 years of experience as a full-stack engineer, I\'m passionate about tackling complex challenges and delivering innovative solutions. I take a holistic approach, covering both front-end and back-end development, which allows me to build high-quality web and mobile applications. My technical skills include C#, Java, React, Xamarin Forms, .NET Core, and mobile development with .NET MAUI. I also have experience in database management and creating user-centered platforms. Always seeking new challenges, I\'m open to relocating for personal and professional growth.",
+    contactTitle: 'Are you looking for developing talent?',
+    contactText: 'I\'m here for new challenges.!',
   },
   es: {
     heroTitle: 'Soy Franklin Paute Machuca',
-    heroSubtitle: 'Hola',
+    heroSubtitle: 'Imagina | Programa | Crea',
     heroText:
-      'Desarrollador Full Stack | .NET | MAUI | React | 🇪🇨 Ecuatoriano, apasionado por lo que hago y compartiendo el viaje de la programación y el desarrollo de software.',
-    aboutTitle: 'Sobre Mí',
+      'Desarrollador Full Stack | .NET | MAUI | React | 🇪🇨 Ecuatoriano, apasionado por lo que hago. Me encanta enfrentar desafíos técnicos y crear soluciones innovadoras. Compartinedo el viaje de la programación y el desarrollo de software.',
+    aboutTitle: '¿Quién está detrás del teclado?',
     aboutText:
-      'Con más de 10 años de experiencia como ingeniero full-stack, me apasiona resolver problemas complejos y ofrecer soluciones de alta calidad. Mi experiencia abarca el desarrollo tanto de front-end como de back-end, lo que me permite construir sitios web, aplicaciones y plataformas móviles robustas. Ofrezco servicios integrales, incluyendo la gestión de bases de datos y la creación de sitios web centrados en el usuario. Mis habilidades técnicas incluyen la programación en lenguajes como C# y Java, y tengo experiencia práctica con tecnologías como React, Xamarin Forms y .NET Core. Además, tengo experiencia en el desarrollo móvil utilizando .NET MAUI. También estoy abierto a reubicarme en nuevas ciudades para potenciar mi crecimiento personal y profesional.',
-    contactTitle: 'Contáctanos',
-    contactText: '¡Ponte en contacto conmigo si lo necesitas!',
+      'Con más de 10 años de experiencia como ingeniero full-stack, me apasiona enfrentar retos complejos y ofrecer soluciones innovadoras. Tengo un enfoque integral que abarca tanto el desarrollo de front-end como back-end, permitiéndome crear aplicaciones web y móviles de alta calidad. Mis habilidades técnicas incluyen C#, Java, React, Xamarin Forms, .NET Core y el desarrollo móvil con .NET MAUI. Además, tengo experiencia en la gestión de bases de datos y en la creación de plataformas centradas en el usuario. Siempre en busca de nuevos desafíos, estoy abierto a reubicarme para seguir creciendo personal y profesionalmente.',
+    contactTitle: '¿Buscas talento en desarrollo?',
+    contactText: 'Estoy aquí para nuevos retos.',
   },
 };
-
 
 function App() {
   return (
@@ -64,10 +62,6 @@ function App() {
     </Router>
   );
 }
-
-
-
-
 
 function Home() {
   const [language, setLanguage] = useState<'en' | 'es'>('en');
@@ -146,23 +140,6 @@ function Home() {
               <img src={image1} alt='Image 1' className='image-1' />
               <img src={image2} alt='Image 2' className='image-2' />
             </div>
-
-            {/* <button  style={{
-          backgroundColor: '#4CAF50', // Color de fondo verde
-          color: 'white', // Color del texto blanco
-          border: 'none', // Sin borde
-          padding: '10px 20px', // Espaciado interno
-          textAlign: 'center', // Alinear el texto
-          textDecoration: 'none', // Sin subrayado
-          display: 'inline-block', 
-          fontSize: '24px', // Tamaño de fuente
-          margin: '10px 2px', // Espaciado externo
-          cursor: 'pointer', // Cursor de puntero
-          borderRadius: '12px', // Bordes redondeados
-          transition: 'background-color 0.3s ease', // Transición suave al pasar el mouse
-        }} onClick={() => window.location.href = '/generate-test'}>
-      Generar Test
-    </button> */}
 
             <div className='video-container'>
               <YouTubePlayer
