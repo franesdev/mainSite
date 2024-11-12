@@ -225,14 +225,14 @@ section h2 {
 }
 
 .image-1 {
-  width: 20%; /* Tamaño específico para la primera imagen */
+  width: 15%; /* Tamaño específico para la primera imagen */
   height: auto;
   filter: brightness(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* Sombra alrededor sin afectar la transparencia */
 
 }
 
 .image-2 {
-  width: 60%; /* Tamaño específico para la segunda imagen */
+  width: 50%; /* Tamaño específico para la segunda imagen */
   height: auto;
   filter: brightness(1.5) drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)); /* Brillo y resplandor suave */
 
