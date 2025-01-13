@@ -143,7 +143,7 @@ function Home() {
 
             <div className="video-container">
               <YouTubePlayer
-                url="https://youtu.be/CGAW7hNAyDE?si=YVjhEgJppdlyC6bd"
+                url="https://www.youtube.com/watch?v=CGAW7hNAyDE"
                 controls
                 loop
               />
